@@ -1,0 +1,33 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Discovery
+alias ls='exa --icons --color=always'
+alias la='exa --all --icons --color=always --group-directories-first'
+alias ll='exa --long --all --icons --color=always --group-directories-first'
+
+alias tree='exa --long --all --icons --tree'
+
+
+# Output
+alias cat='bat --paging=never'
+
+
+# Input
+alias cls='clear'
+
+source ~/.bashrc_binds
+source ~/.bashrc_ps1
+
+# Scripts
+source ~/.bashrc_cdls
+
+
+
+
+# On Start
+fastfetch

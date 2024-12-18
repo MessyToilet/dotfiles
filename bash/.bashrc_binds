@@ -1,0 +1,4 @@
+bind "set completion-ignore-case on"
+bind 'TAB:menu-complete'          # Tab completes options
+bind '"\e[Z":menu-complete-backward'  # Shift+Tab goes backward
+
