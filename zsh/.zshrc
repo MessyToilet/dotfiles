@@ -30,5 +30,8 @@ alias cls='clear'
 
 
 source ~/.zshrc_ps1
+source ~/.zplugrc
+
+
 
 fastfetch
