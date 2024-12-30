@@ -1,3 +1,3 @@
-PROMPT='%F{white}[ %F{magenta}%n%f@%F{magenta}%m%f %F{white}]
+PROMPT='%F{white}[ %F{red}%n%f@%F{red}%m%f %fw/ %F{magenta}KITTY %f+ %F{green}ZSH %F{white}]
 %F{white}( %F{yellow}%~%f%F{white} ) $ '
 
