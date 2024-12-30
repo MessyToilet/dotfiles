@@ -1,0 +1,6 @@
+# Automatically ls after a cd
+
+cd() {
+    builtin cd "$@"
+    ls
+    }
