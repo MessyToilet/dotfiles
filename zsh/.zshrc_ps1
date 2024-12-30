@@ -1,0 +1,3 @@
+PROMPT='%F{white}[ %F{magenta}%n%f@%F{magenta}%m%f %F{white}]
+%F{white}( %F{yellow}%~%f%F{white} ) $ '
+
