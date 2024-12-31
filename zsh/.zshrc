@@ -39,4 +39,4 @@ source ~/.zshrc_cdls
 
 
 fastfetch
-
+colorscript -e 58
