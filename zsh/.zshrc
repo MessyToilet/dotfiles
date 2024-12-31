@@ -1,3 +1,5 @@
+export PATH=$PATH:/usr/local/bin
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -26,6 +28,7 @@ alias cat='bat --paging=never'
 
 
 # Input
+alias clear='clear && pokemon-colorscripts -r 1-5 -s --no-title'
 alias cls='clear'
 
 
@@ -35,3 +38,4 @@ source ~/.zshrc_cdls
 
 
 fastfetch
+

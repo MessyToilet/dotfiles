@@ -1,0 +1,17 @@
+shell /run/current-system/sw/bin/zsh
+
+# Set transparency (0 is fully transparent, 1 is fully opaque)
+background_opacity 0.8
+
+# Add padding around the window content
+window_padding_width 5
+
+cursor_shape underline
+
+font_size 13
+
+
+# BEGIN_KITTY_THEME
+# Bright Lights
+include current-theme.conf
+# END_KITTY_THEME

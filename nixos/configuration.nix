@@ -96,9 +96,11 @@
 	# Tooling
 	git
 	curl
+	
 
 	# Tools
 	neovim
+	fzf
 
 	# Info
 	fastfetch
