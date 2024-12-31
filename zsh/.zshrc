@@ -31,6 +31,7 @@ alias cat='bat --paging=never'
 alias clear='clear && pokemon-colorscripts -r 1-5 -s --no-title'
 alias cls='clear'
 
+alias zsh='command clear && zsh'
 
 source ~/.zshrc_ps1
 source ~/.zshrc_cdls
