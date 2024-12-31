@@ -33,10 +33,20 @@ alias cls='clear'
 
 alias zsh='command clear && zsh'
 
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+#
 source ~/.zshrc_ps1
 source ~/.zshrc_cdls
 
+# Zplug
+source ~/.zplug/init.zsh
 
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-completions"
+
+# On start 
 
 fastfetch
-colorscript -e 58
+

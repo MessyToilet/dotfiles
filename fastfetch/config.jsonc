@@ -52,8 +52,13 @@
 	{
             	"type": "os",
             	"key": "  os",
-            	"keyColor": "cyan"
+            	"keyColor": "light_red"
         }, 
+	{
+		"type": "packages",
+		"key": "  pkgs",
+		"keyColor": "light_yellow"
+	},
 	{
 		"type": "lm",
 		"key": "  dm",
@@ -67,12 +72,12 @@
 	{
 		"type": "wm",
 		"key": "  wm",
-		"KeyColor": "cyan"
+		"KeyColor": "light_green"
 	},
 	{
 		"type": "terminal",
 		"key": "  tm",
-		"keyColor": "cyan"
+		"keyColor": "light_green"
 	},
 	{
 		"type": "shell",
@@ -104,13 +109,13 @@
         {
             	"type": "command",
             	"key": "󱑃 age",
-            	"keyColor": "magenta",
+            	"keyColor": "light_magenta",
             	"text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             	"type": "uptime",
             	"key": "󱑃 on4",
-            	"keyColor": "magenta"
+            	"keyColor": "light_magenta"
         },
 
         "break",
