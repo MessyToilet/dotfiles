@@ -105,8 +105,13 @@
 	# Info
 	fastfetch
 	btop
-
-  ];
+	
+	# Languages
+	python3
+	
+	# Rice
+	(nerdfonts.override { fonts = [ "IBMPlexMono" ]; })
+];
   
   # Use zsh
   users.users.j.shell = pkgs.zsh;
@@ -114,6 +119,8 @@
 	
   # Use kitty
   environment.variables.XDG_TERMINAL_EMULATOR = "kitty";
+
+  
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
