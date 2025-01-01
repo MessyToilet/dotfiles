@@ -94,10 +94,13 @@
 	bat
 
 	# Tooling
+	gnumake
+	cargo
 	git
 	curl
 	jq
 	file
+	ripgrep
 
 	# Tools
 	neovim
@@ -115,9 +118,14 @@
 	
 	# Languages
 	python3
+	python3Packages.pip
+	jdk
 	go
 	gcc
-	
+	nodejs
+	nodePackages.npm
+	rustc
+
 	# Rice
 	(nerdfonts.override { fonts = [ "IBMPlexMono" ]; })
 dwt1-shell-color-scripts
@@ -129,6 +137,11 @@ dwt1-shell-color-scripts
   # Use kitty
   environment.variables.XDG_TERMINAL_EMULATOR = "kitty";
 
+	environment.variables = {
+		PIP_CASCHE_DIR = "/var/cache/pip";
+		CARGO_HOME = "/var/cache/cargo";
+		JAVA_HOME = "${pkgs.jdk}";
+	};
   
 
   # Some programs need SUID wrappers, can be configured further or are
