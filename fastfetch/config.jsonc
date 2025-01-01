@@ -2,125 +2,126 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
 	//	"source": "$(shuf -n 1 -e ~/Resources/pokemon-colorscripts/colorscripts/small/regular/*)",
-		"source": "~/Resources/pokemon-colorscripts/colorscripts/small/regular/sirfetchd",
+	//	"source": "~/Resources/pokemon-colorscripts/colorscripts/small/regular/sirfetchd",
+ 		"source": "~/Resources/pokemon-colorscripts/colorscripts/small/shiny/sirfetchd",
+	//	"source": "~/Resources/pokemon-colorscripts/colorscripts/small/shiny/vaporeon",
+
+
 		"type": "auto",
 		"padding": {
 			"top": 0,
 			"left": 0,
-			"right": 2 
+			"right": 1 
 		}
     	},
-    "modules": [   
-        {
-            	"type": "custom",
-            	"key": "󰇅 Host",
-            	"keyColor": "red",
-		"format": "Thinkpad T480"
-        },
+	"display": {
+		"separator": " "
+	},
+    	"modules": [   
+	{
+		"type": "title",
+		"key": "  ",
+		"keyColor": "light_magenta"
+	},
+	{
+            	"type": "command",
+		"key": "󰇅  ",
+		"keyColor": "light_red",
+		"text": "cat /sys/devices/virtual/dmi/id/product_family"
+	},
 	{
 		"type": "display",
-		"key": "󰍹 Display",
-		"keyColor": "red"
+		"key": "󰍹  ",
+		"keyColor": "light_red"
 	},
 	"break",
 	{
-            	"type": "cpu",
-            	"key": "󰻠  cpu", 
-            	"keyColor": "green"
-	},
-        {
-            	"type": "gpu",
-            	"key": "󰍛  gpu",
-            	"keyColor": "green"
-        },
-        {
-            	"type": "memory",
-            	"key": "  mem",
-            	"keyColor": "green"
-        },
-        {
-            	"type": "disk",
-            	"key": "  dsk",
-            	"keyColor": "green"
-        },
-	{
-		"type": "battery",
-		"key": "  bat",
-		"keyColor": "yellow"
-	},
-	"break",
-	{
-            	"type": "os",
-            	"key": "  os",
-            	"keyColor": "light_red"
+            	"type": "command",
+            	"key": "  ",
+            	"keyColor": "yellow",
+		"text": "cat /etc/os-release | grep 'PRETTY_NAME' | awk -F'\"' '{print $2}'"
         }, 
 	{
 		"type": "packages",
-		"key": "  pkgs",
+		"key": "  ",
 		"keyColor": "light_yellow"
 	},
 	{
-		"type": "lm",
-		"key": "  dm",
-		"keyColor": "cyan"
-	},
-	{
-		"type": "de",
-		"key": "  de",
-		"keyColor": "cyan"
-	},
-	{
-		"type": "wm",
-		"key": "  wm",
-		"KeyColor": "light_green"
-	},
-	{
 		"type": "terminal",
-		"key": "  tm",
+		"key": "  ",
 		"keyColor": "light_green"
 	},
 	{
 		"type": "shell",
-		"key": "  sh",
-		"keyColor": "cyan"
+		"key": "  ",
+		"keyColor": "light_green"
 	},
+	{
+		"type": "terminalFont",
+		"key": "  ",
+		"keyColor": "light_blue"
+	},
+	"break",
+	{
+		"type": "lm",
+		"key": "  ",
+		"keyColor": "light_blue"
+	},
+	{
+		"type": "wm",
+		"key": "  ",
+		"KeyColor": "light_blue"
+	},
+	{
+		"type": "de",
+		"key": " ",
+		"keyColor": "light_green"
+	},
+
         {
             	"type": "wmtheme",
             	"key": "󰉼  wm theme",
-            	"keyColor": "blue"
+            	"keyColor": "light_blue"
         },
 	{
 		"type": "theme",
 		"key": "󰉼 sys theme",
-		"keyColor": "blue"
+		"keyColor": "light_blue"
 	},
-	{
-		"type": "font",
-		"key": " font",
-		"keyColor": "blue"
-	},
-
+	
 	"break",
 	{
-		"type": "title",
-		"key": " usr",
-		"keyColor": "magenta"
+            	"type": "disk",
+            	"key": "󰋊  ",
+            	"keyColor": "light_red"
+	},	
+	{
+            	"type": "cpu",
+            	"key": "󰻠  ", 
+            	"keyColor": "yellow"
 	},
         {
-            	"type": "command",
-            	"key": "󱑃 age",
-            	"keyColor": "light_magenta",
-            	"text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+            	"type": "gpu",
+            	"key": "󰍛  ",
+            	"keyColor": "yellow"
         },
         {
+            	"type": "memory",
+            	"key": "  ",
+            	"keyColor": "yellow"
+        },
+	"break",
+	        
+        {
             	"type": "uptime",
-            	"key": "󱑃 on4",
+            	"key": "󰞌  ",
             	"keyColor": "light_magenta"
         },
 
         "break",
 	{
 		"type": "colors",
+		"symbol": "circle"
 	}
     ]
 }
