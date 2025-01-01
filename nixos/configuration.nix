@@ -96,11 +96,18 @@
 	# Tooling
 	git
 	curl
-	
+	jq
+	file
 
 	# Tools
 	neovim
 	fzf
+
+	# Study
+	obsidian
+	
+	# Social
+	discord-ptb
 
 	# Info
 	fastfetch
@@ -108,15 +115,17 @@
 	
 	# Languages
 	python3
+	go
+	gcc
 	
 	# Rice
 	(nerdfonts.override { fonts = [ "IBMPlexMono" ]; })
+dwt1-shell-color-scripts
 ];
   
   # Use zsh
   users.users.j.shell = pkgs.zsh;
-  programs.zsh.enable = true; 
-	
+  programs.zsh.enable = true;
   # Use kitty
   environment.variables.XDG_TERMINAL_EMULATOR = "kitty";
 
