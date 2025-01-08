@@ -1,0 +1,27 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$lua\
+$python\
+$java\
+$c\
+$c++\
+$rust\
+$go\
+$docker_context\
+$jobs\
+$cmd_duration\
+$line_break\
+$character"""
+
+[fill]
+symbol = ' '
+
+[python]
+style = 'green'
+symbol = ' '
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+pyenv_version_name = true
+pyenv_prefix = ""
