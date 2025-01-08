@@ -16,11 +16,13 @@ compinit
 # End of lines added by compinstall
 
 # Discovery
-alias ls='exa --icons --color=always'
-alias la='exa --all --icons --color=always --group-directories-first'
-alias ll='exa --long --all --icons --color=always --group-directories-first'
+alias ls='eza -x --classify=always --git-ignore --sort extension --icons=always --color=always --group-directories-first'
+alias la='eza -xa --classify=always --sort extension --icons=always --color=always --group-directories-first'
+alias ll='eza -xaalbhHmog --classify=always --sort extension --git --git-repos-no-status --icons=always --color=always --group-directories-first  --total-size'
 
-alias tree='exa --long --all --icons --tree'
+alias ts='eza -TD --hyperlink --icons=always'
+alias ta='eza -T  --hyperlink --icons=always'
+alias tl='eza -Ta --hyperlink --icons=always'
 
 
 # Output
@@ -39,14 +41,12 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 source ~/.zshrc_ps1
 source ~/.zshrc_cdls
 
-# Zplug
-source ~/.zplug/init.zsh
 
-zplug "zsh-users/zsh-syntax-highlighting"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
+
+
+
 
 # On start 
-
+unset LS_COLORS
 fastfetch
 
