@@ -23,7 +23,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
   # Set your time zone.
   time.timeZone = "America/Toronto";
 
@@ -90,21 +89,29 @@
 	# CLI
 	zsh
 	kitty	
-	eza
+
 	bat
 
 	# Tooling
 	gnumake
 	cargo
+
+	stow
 	git
 	curl
+	
 	jq
+	
 	file
 	ripgrep
 
+	networkmanager
+
 	# Tools
 	neovim
+	
 	fzf
+  universal-ctags
 
 	# Study
 	obsidian
@@ -114,21 +121,47 @@
 
 	# Info
 	fastfetch
+
+	dmidecode
+
 	btop
-	
+	bmon
+	glances
+
 	# Languages
 	python3
 	python3Packages.pip
+	
 	jdk
+	
 	go
+	
 	gcc
-	nodejs
+	
 	nodePackages.npm
+	
 	rustc
 
 	# Rice
-	(nerdfonts.override { fonts = [ "IBMPlexMono" ]; })
-dwt1-shell-color-scripts
+	eza
+	starship
+
+	nerdfonts
+	font-awesome
+
+	dwt1-shell-color-scripts
+	
+	hyprland
+	hyprpaper
+	hypridle
+	hyprlock
+	hyprshot
+	hyprcursor
+	waybar
+	wofi
+	swaynotificationcenter	
+
+
 ];
   
   # Use zsh
@@ -142,7 +175,9 @@ dwt1-shell-color-scripts
 		CARGO_HOME = "/var/cache/cargo";
 		JAVA_HOME = "${pkgs.jdk}";
 	};
-  
+
+	programs.hyprland.enable = true;
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

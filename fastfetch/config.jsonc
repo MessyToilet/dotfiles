@@ -4,8 +4,8 @@
 	//	"source": "$(shuf -n 1 -e ~/Resources/pokemon-colorscripts/colorscripts/small/regular/*)",
  	//	"source": "~/Resources/pokemon-colorscripts/colorscripts/small/shiny/sirfetchd",
 	//	"source": "~/Resources/pokemon-colorscripts/colorscripts/small/shiny/vaporeon",
-		"source": "~/Resources/pokemon-colorscripts/colorscripts/small/regular/dragapult",
-
+	//	"source": "~/Resources/pokemon-colorscripts/colorscripts/small/regular/dragapult",
+		"source": "~/Resources/pokemon-colorscripts/colorscripts/small/shiny/slowking-galar",
 		"type": "auto",
 		"padding": {
 			"top": 0,
