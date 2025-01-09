@@ -1,4 +1,5 @@
 export PATH=$PATH:/usr/local/bin
+export PATH="$HOME/.local/bin:$PATH"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -39,7 +40,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 
 # Override
-alias nvim='lvim'
+
 
 # Starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"

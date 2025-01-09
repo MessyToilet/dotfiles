@@ -8,8 +8,8 @@
 		"source": "~/Resources/pokemon-colorscripts/colorscripts/small/shiny/slowking-galar",
 		"type": "auto",
 		"padding": {
-			"top": 0,
-			"left": 0,
+			"top": 1,
+			"left": 2,
 			"right": 5 
 		}
     	},
