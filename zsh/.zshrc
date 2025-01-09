@@ -37,8 +37,14 @@ alias zsh='command clear && zsh'
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
+
+# Override
+alias nvim='lvim'
+
+# Starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+
 #
-source ~/.zshrc_ps1
 source ~/.zshrc_cdls
 
 
@@ -48,5 +54,6 @@ source ~/.zshrc_cdls
 
 # On start 
 unset LS_COLORS
+eval "$(starship init zsh)"
 fastfetch
 
